@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q4 | Exercise 4</title>
+	<head>
+		<title>Measurement Converter</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	</head>
+
+<div class="container" style="font-size: 2em;">
+    <style type="text/css">
+	h1{
+        text-shadow: 2px 2px 4px darkorange;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        text-align: center;
+	}
+	h2{
+		text-shadow: 2px 2px 4px darkorange;
+        text-transform: lowercase;
+        letter-spacing: 4px;
+	}
+	p{
+		text-shadow: 2px 2px 4px darkorange;
+        text-transform: lowercase;
+        letter-spacing: 4px;
+        text-align: center;
+	}
+</style>
+<h1>Converting Measurements</h1>
+<body>
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+//variable declaration;assignment of values
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=(valNum-32)/1.8;
+}
+</script>
+
+<p>
+  <label>Fahrenheit</label>
+  <input id="inputFahrenheit" type="number" placeholder="Farenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
+
+<script>
+	//variable declaration;assignment of values
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvin").innerHTML=((valNum-32)/1.8)+273.15;
+}
+</script>
+    </script>
+
+    <body>
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+}
+</script>
+
+<body>
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Kelvin: <span id="outputKelvin"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputKelvin").innerHTML=valNum+273.15;
+}
+</script>
+
+<body>
+<p>
+  <label>Kelvin</label>
+  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=((valNum-273.15)*1.8)+32;
+}
+</script>
+
+<body>
+<p>
+  <label>Kelvin</label>
+  <input id="inputKelvin" type="number" placeholder="Kelvin" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Celcius: <span id="outputCelcius"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputCelcius").innerHTML=valNum-273.15;
+}
+</script>
+
+</body>
+</script>
+</body>
+</html>
